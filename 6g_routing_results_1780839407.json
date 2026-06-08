@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "ticks": 200,
+    "n": 10,
+    "conn": 3,
+    "rate": 3,
+    "emerg_frac": 20,
+    "proc_cap": 2,
+    "scenario": "uniform",
+    "num_runs": 30,
+    "seed": 42,
+    "total_pkts": 600
+  },
+  "adaptive": {
+    "pdr": "99.73 \u00b1 0.16",
+    "delivered_mean": 598.4,
+    "dropped_mean": 1.6,
+    "emerg_latency_ms": "8.8 \u00b1 1.1",
+    "p95_emerg_ms": "25.6 \u00b1 2.7",
+    "throughput_pps": "299.2 \u00b1 0.5",
+    "loss_rate_pct": "0.27 \u00b1 0.16",
+    "control_msgs_mean": 1344.0
+  },
+  "baseline": {
+    "pdr": "99.75 \u00b1 0.16",
+    "delivered_mean": 598.5,
+    "dropped_mean": 1.5,
+    "emerg_latency_ms": "9.2 \u00b1 1.1",
+    "p95_emerg_ms": "26.1 \u00b1 2.5",
+    "throughput_pps": "299.2 \u00b1 0.5",
+    "loss_rate_pct": "0.25 \u00b1 0.16",
+    "control_msgs_mean": 1344.0
+  },
+  "delta": {
+    "emerg_latency_pct": "-4.5%",
+    "pdr_pct": "-0.0%",
+    "loss_rate_pct": "8.0%"
+  },
+  "classifier": {
+    "v1_accuracy": 75.2,
+    "v2_accuracy": 89.0,
+    "v1_f1": 75.3,
+    "v2_f1": 89.2
+  }
+}
